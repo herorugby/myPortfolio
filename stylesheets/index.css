@@ -1,1 +1,77 @@
 @charset "UTF-8";
+html,
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+
+img {
+  width: 100%;
+}
+
+/* font size auto control off */
+body {
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+.wrap {
+  width: 95%;
+  height: auto;
+  margin: 2% 2.5%;
+}
+
+/* Header */
+/* css less than 559px ~mobile.ver~ */
+
+/* css 561px or more ~tablet.ver~ */
+/* Header */
+@media screen and (min-width: 560px) {
+}
+
+/* css 960px or more ~desktop.ver~ */
+/* Header */
+@media screen and (min-width: 960px) {
+}
+
+/* Main */
+/* css less than 559px ~mobile.ver~ */
+
+/* css 561px or more ~tablet.ver~ */
+/* Main */
+@media screen and (min-width: 560px) {
+}
+
+/* css 960px or more ~desktop.ver~ */
+/* Main */
+@media screen and (min-width: 960px) {
+}
+
+/* Footer */
+/* css less than 559px ~mobile.ver~ */
+
+/* css 561px or more ~tablet.ver~ */
+/* Footer */
+@media screen and (min-width: 560px) {
+}
+
+/* css 960px or more ~desktop.ver~ */
+/* Footer */
+@media screen and (min-width: 960px) {
+}
