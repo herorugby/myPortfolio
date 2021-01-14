@@ -29,6 +29,8 @@ body {
   -moz-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   text-size-adjust: 100%;
+  background-color: #e7e7e7;
+  font-size: 16px;
 }
 
 .wrap {
@@ -39,95 +41,52 @@ body {
 
 /* Header */
 /* css less than 559px ~mobile.ver~ */
-
-/* css 561px or more ~tablet.ver~ */
-/* Header */
-@media screen and (min-width: 560px) {
-}
-
-/* css 960px or more ~desktop.ver~ */
-/* Header */
-@media screen and (min-width: 960px) {
-}
-
-/* Main */
-/* css less than 559px ~mobile.ver~ */
-
-/* css 561px or more ~tablet.ver~ */
-/* Main */
-@media screen and (min-width: 560px) {
-}
-
-/* css 960px or more ~desktop.ver~ */
-/* Main */
-@media screen and (min-width: 960px) {
-}
-
-/* Footer */
-/* css less than 559px ~mobile.ver~ */
-
-/* css 561px or more ~tablet.ver~ */
-/* Footer */
-@media screen and (min-width: 560px) {
-}
-
-/* css 960px or more ~desktop.ver~ */
-/* Footer */
-@media screen and (min-width: 960px) {
-}
-
-body {
-  background-color: #e7e7e7;
-  font-family: Helvetica, Arial, sans-serif;
-}
-
 header {
-  font-size: x-large;
+  width: 100%;
   text-align: center;
   background-color: #555;
-  color: #ddd;
-  padding: 5px;
-  font-family: Helvetica, sans-serif;
-  margin-bottom: 50px;
+  color: #fff;
 }
 
-header a {
-  background-color: #ddd;
-  color: #555;
-  text-decoration: none;
-  padding: 0 3px 0 3px;
+.wrap-header {
+  height: 15vh;
+  display: table;
 }
 
-header a:hover {
-  background-color: #555;
-  color: #ddd;
-  text-decoration: underline;
-}
+.header__contents {
+  display: table-cell;
+  vertical-align: middle;
 
-footer {
   text-align: center;
-  background-color: #555;
-  color: #ddd;
-  padding: 5px;
-  margin-top: 50px;
+  height: 15vh;
 }
 
-footer a {
-  background-color: #ddd;
-  color: #555;
-  text-decoration: none;
-  padding: 0 3px 0 3px;
+h1 {
+  /* width: 100%; */
+  font-size: 1.625rem;
 }
 
-footer a:hover {
-  background-color: #555;
-  color: #ddd;
-  text-decoration: underline;
+/* css 561px or more ~tablet.ver~ */
+/* Header */
+@media screen and (min-width: 560px) {
+  h1 {
+    font-size: 1.75rem;
+  }
 }
 
+/* css 960px or more ~desktop.ver~ */
+/* Header */
+@media screen and (min-width: 960px) {
+  h1 {
+    font-size: 1.875rem;
+  }
+}
+
+/* Main */
+/* css less than 559px ~mobile.ver~ */
 #wheelDiv {
-  height: 400px;
-  width: 400px;
+  height: 200px;
+  width: 200px;
   margin: auto;
 }
 
@@ -136,18 +95,88 @@ footer a:hover {
   width: 100%;
 }
 
-@media (max-width: 600px) {
-  #wheelDiv {
-    height: 350px;
-    width: 350px;
-  }
+h2 {
+  font-size: 1.5rem;
 }
 
-@media (max-width: 400px) {
+h3 {
+  font-size: 1.25rem;
+}
+
+h4 {
+  font-size: 1.125rem;
+}
+
+/* css 561px or more ~tablet.ver~ */
+/* Main */
+@media screen and (min-width: 560px) {
+  h2 {
+    font-size: 1.625rem;
+  }
+
+  h3 {
+    font-size: 1.375rem;
+  }
+
+  h4 {
+    font-size: 1.25rem;
+  }
+
   #wheelDiv {
     height: 300px;
     width: 300px;
   }
+
 }
+
+/* css 960px or more ~desktop.ver~ */
+/* Main */
+@media screen and (min-width: 960px) {
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  h4 {
+    font-size: 1.375rem;
+  }
+
+  #wheelDiv {
+    height: 350px;
+    width: 350px;
+  }
+
+}
+
+/* Footer */
+/* css less than 559px ~mobile.ver~ */
+footer {
+  text-align: center;
+  background-color: #555;
+  color: #ddd;
+  padding: 5px;
+  margin-top: 50px;
+}
+
+/* css 561px or more ~tablet.ver~ */
+/* Footer */
+@media screen and (min-width: 560px) {
+}
+
+/* css 960px or more ~desktop.ver~ */
+/* Footer */
+@media screen and (min-width: 960px) {
+}
+
+
+
+
+
+
+
+
 
 /* Insert generated CSS code from here -> http://pmg.softwaretailoring.net */

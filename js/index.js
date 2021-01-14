@@ -3,11 +3,13 @@ var b = document.getElementById("works");
 var c = document.getElementById("skills");
 var d = document.getElementById("future");
 
-a.style.display = "none";
+// a.style.display = "none";
+
+
+
 
 
 var wheel = new wheelnav("wheelDiv");
-
 window.onload = function () {
 
     // var wheel = new wheelnav("wheelDiv");
@@ -29,6 +31,9 @@ window.onload = function () {
         a.style.display = "block";
       }
 }
+
+
+
 
 // copy right get full year
 // get Date preparation
