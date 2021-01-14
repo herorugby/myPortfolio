@@ -43,32 +43,33 @@ body {
 /* css less than 559px ~mobile.ver~ */
 header {
   width: 100%;
-  text-align: center;
   background-color: #555;
   color: #fff;
+  text-align: center;
 }
 
 .wrap-header {
-  height: 15vh;
+  width: 100%;
+  height: 10vh;
   display: table;
 }
 
 .header__contents {
   display: table-cell;
   vertical-align: middle;
-
-  text-align: center;
-  height: 15vh;
 }
 
 h1 {
-  /* width: 100%; */
   font-size: 1.625rem;
 }
 
 /* css 561px or more ~tablet.ver~ */
 /* Header */
 @media screen and (min-width: 560px) {
+  .wrap-header {
+    height: 12vh;
+  }
+
   h1 {
     font-size: 1.75rem;
   }
@@ -77,6 +78,10 @@ h1 {
 /* css 960px or more ~desktop.ver~ */
 /* Header */
 @media screen and (min-width: 960px) {
+  .wrap-header {
+    height: 14vh;
+  }
+
   h1 {
     font-size: 1.875rem;
   }
@@ -84,6 +89,68 @@ h1 {
 
 /* Main */
 /* css less than 559px ~mobile.ver~ */
+.main__head {
+  width: 100%;
+  height: auto;
+  background-image: url(../mainBackPic.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 30%;
+}
+
+.main__head::before {
+  content: "";
+  display: block;
+  height: 2vh;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.main__head__bgmask {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.head__pic {
+  width: 60%;
+  height: 30vh;
+  margin: 0 20% 3%;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-image: url(../headPicture.JPG);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.head__github {
+  width: 40%;
+  line-height: 5vh;
+  margin: 2% 30%;
+  text-align: center;
+  border: 1px solid black;
+}
+
+.github__link {
+  display: block;
+  text-decoration: none;
+  background-color: #c0c0c0;
+  color: #000;
+}
+
+.github__link,
+.github__link:visited,
+.github__link:hover,
+.github__link:active {
+  color: inherit;
+}
+
+.github__link::before {
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 900;
+  content: "\f09b";
+}
+
 #wheelDiv {
   height: 200px;
   width: 200px;
@@ -126,7 +193,6 @@ h4 {
     height: 300px;
     width: 300px;
   }
-
 }
 
 /* css 960px or more ~desktop.ver~ */
@@ -148,7 +214,6 @@ h4 {
     height: 350px;
     width: 350px;
   }
-
 }
 
 /* Footer */
@@ -170,13 +235,5 @@ footer {
 /* Footer */
 @media screen and (min-width: 960px) {
 }
-
-
-
-
-
-
-
-
 
 /* Insert generated CSS code from here -> http://pmg.softwaretailoring.net */
