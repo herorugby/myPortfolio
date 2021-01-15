@@ -13,9 +13,11 @@
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-  <script src="js/raphael.min.js"></script>
-  <script src="js/raphael.icons.min.js"></script>
-  <script src="js/wheelnav.min.js"></script>
+  <!-- <script src="js/raphael.min.js"></script> -->
+  <!-- <script src="js/raphael.icons.min.js"></script> -->
+  <!-- <script src="js/wheelnav.min.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/wheelnav@1.7.1/js/dist/raphael.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/wheelnav@1.7.1/js/dist/wheelnav.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
@@ -37,7 +39,8 @@
             <div class="head__github">
               <a class="github__link" href="https://github.com/herorugby" target="_blank" rel="noopener">&ensp;GitHub</a>
             </div>
-            <div id="wheelDiv" class="head__nav"></div>
+            <div id="wheelDiv" class="head__nav" data-wheelnav
+            data-wheelnav-navangle="90"></div>
           </div>
         </div>
         <section id="about-me">
