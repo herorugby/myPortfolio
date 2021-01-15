@@ -152,14 +152,16 @@ h1 {
 }
 
 #wheelDiv {
-  height: 200px;
-  width: 200px;
+  width: 100%;
+  /* 高さ指定はしなくても大丈夫。下のホイール自体の大きさに合わせて可変 */
+  /* height: 100%;  */
   margin: auto;
 }
 
 #wheelDiv > svg {
-  height: 100%;
-  width: 100%;
+  width: 60%;
+  height: 60%;
+  margin: 0 20% 1%;
 }
 
 h2 {
