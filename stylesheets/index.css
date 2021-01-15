@@ -179,6 +179,12 @@ h4 {
 /* css 561px or more ~tablet.ver~ */
 /* Main */
 @media screen and (min-width: 560px) {
+  #wheelDiv > svg {
+    width: 80%;
+    height: 80%;
+    margin: 0 10% 1%;
+  }
+
   h2 {
     font-size: 1.625rem;
   }
@@ -189,11 +195,6 @@ h4 {
 
   h4 {
     font-size: 1.25rem;
-  }
-
-  #wheelDiv {
-    height: 300px;
-    width: 300px;
   }
 }
 
@@ -210,11 +211,6 @@ h4 {
 
   h4 {
     font-size: 1.375rem;
-  }
-
-  #wheelDiv {
-    height: 350px;
-    width: 350px;
   }
 }
 
