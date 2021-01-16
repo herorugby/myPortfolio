@@ -7,7 +7,7 @@ var a = document.getElementById("about-me");
 
 
 var wheel = new wheelnav('wheelDiv');
-      wheel.createWheel(["About ME", "Works", "Skills", "Future"]);
+      wheel.createWheel(["About\nME", "Works", "Skills", "Future"]);
       wheel.navigateWheel(0); //default num
 
 

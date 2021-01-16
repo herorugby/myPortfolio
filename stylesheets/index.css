@@ -91,7 +91,8 @@ h1 {
 /* css less than 559px ~mobile.ver~ */
 .main__head {
   width: 100%;
-  height: 63vh;
+  height: 60vh;
+  position: relative;
   background-image: url(../mainBackPic.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -108,7 +109,7 @@ h1 {
 
 .main__head__bgmask {
   width: 100%;
-  height: 100%;
+  height: 98.75%;
   background-color: rgba(255, 255, 255, 0.5);
 }
 .head__pic {
@@ -125,11 +126,14 @@ h1 {
 }
 
 .head__github {
-  width: 40%;
+  position: absolute;
+  bottom: 0;
+  right: 4%;
+  width: 10%;
   line-height: 5vh;
-  margin: 3.1% 30% 0.9%;
   text-align: center;
   border: 1px solid black;
+  border-radius: 5%;
 }
 
 .github__link {
@@ -139,10 +143,46 @@ h1 {
   color: #000;
 }
 
-.github__link,
-.github__link:visited,
-.github__link:hover,
-.github__link:active {
+.head__facebook {
+  position: absolute;
+  bottom: 12%;
+  right: 4%;
+  width: 10%;
+  line-height: 5vh;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 5%;
+}
+
+.facebook__link {
+  display: block;
+  text-decoration: none;
+  background-color: #c0c0c0;
+  color: #000;
+}
+
+.head__instagram {
+  position: absolute;
+  bottom: 20%;
+  right: 4%;
+  width: 10%;
+  line-height: 5vh;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 5%;
+}
+
+.instagram__link {
+  display: block;
+  text-decoration: none;
+  background-color: #c0c0c0;
+  color: #000;
+}
+
+.sns-link,
+.sns-link:visited,
+.sns-link:hover,
+.sns-link:active {
   color: inherit;
 }
 
@@ -152,16 +192,27 @@ h1 {
   content: "\f09b";
 }
 
+.facebook__link::before {
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 900;
+  content: "\f09a";
+}
+
+.instagram__link::before {
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 900;
+  content: "\e055";
+}
+
 #wheelDiv {
   width: 60%;
-  /* 高さ指定はしなくても大丈夫。下のホイール自体の大きさに合わせて可変 */
   height: 60vh;
-  margin: 0 20%;
+  margin: 0 30% 0 10%;
 }
 
 #wheelDiv > svg {
   width: 100%;
-  height: 80%;
+  height: 90%;
   /* margin: 0 20%; */
 }
 
