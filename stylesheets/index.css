@@ -33,7 +33,7 @@ body {
   font-size: 16px;
 }
 
-.wrap {
+.all-wrap {
   width: 95%;
   height: auto;
   margin: 2% 2.5%;
@@ -91,7 +91,7 @@ h1 {
 /* css less than 559px ~mobile.ver~ */
 .main__head {
   width: 100%;
-  height: auto;
+  height: 63vh;
   background-image: url(../mainBackPic.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -101,7 +101,7 @@ h1 {
 .main__head::before {
   content: "";
   display: block;
-  height: 2vh;
+  height: 1.25%;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.5);
 }
@@ -113,10 +113,11 @@ h1 {
 }
 .head__pic {
   width: 60%;
-  height: 30vh;
+  height: 28.5vh;
   margin: 0 20% 3%;
   border-radius: 50%;
-  border: 1px solid black;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0.45);
   background-image: url(../headPicture.JPG);
   background-size: cover;
   background-repeat: no-repeat;
@@ -126,7 +127,7 @@ h1 {
 .head__github {
   width: 40%;
   line-height: 5vh;
-  margin: 2% 30%;
+  margin: 3.1% 30% 0.9%;
   text-align: center;
   border: 1px solid black;
 }
@@ -152,16 +153,16 @@ h1 {
 }
 
 #wheelDiv {
-  width: 100%;
+  width: 60%;
   /* 高さ指定はしなくても大丈夫。下のホイール自体の大きさに合わせて可変 */
-  /* height: 100%;  */
-  margin: auto;
+  height: 60vh;
+  margin: 0 20%;
 }
 
 #wheelDiv > svg {
-  width: 60%;
-  height: 60%;
-  margin: 0 20% 1%;
+  width: 100%;
+  height: 80%;
+  /* margin: 0 20%; */
 }
 
 h2 {
