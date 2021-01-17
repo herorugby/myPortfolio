@@ -1,13 +1,15 @@
 var a = document.getElementById("about-me");
-// var b = document.getElementById("works");
-// var c = document.getElementById("skills");
-// var d = document.getElementById("future");
+var b = document.getElementById("works");
+var c = document.getElementById("skills");
+var d = document.getElementById("future");
 
 // a.style.display = "none";
+// b.style.display = "none";
+// d.style.display = "none";
 
 
 var wheel = new wheelnav('wheelDiv');
-      wheel.createWheel(["About\nME", "Works", "Skills", "Future"]);
+      wheel.createWheel(["About\nME", "Works", "Skills","Future"]);
       wheel.navigateWheel(0); //default num
 
 

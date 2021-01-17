@@ -4,7 +4,12 @@ body,
 h1,
 h2,
 h3,
-p {
+h4,
+h5,
+p,
+dl,
+dt,
+dd {
   margin: 0;
   padding: 0;
   line-height: 1;
@@ -31,6 +36,7 @@ body {
   text-size-adjust: 100%;
   background-color: #e7e7e7;
   font-size: 16px;
+  font-family: "Sawarabi Gothic", sans-serif;
 }
 
 .all-wrap {
@@ -89,11 +95,27 @@ h1 {
 
 /* Main */
 /* css less than 559px ~mobile.ver~ */
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+h4 {
+  font-size: 1.125rem;
+}
+
+h5 {
+  font-size: 1.0625rem;
+}
+
 .main__head {
   width: 100%;
   height: 60vh;
   position: relative;
-  background-image: url(../mainBackPic.jpg);
+  background-image: url(../images/mainBackPic.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 30%;
@@ -115,11 +137,11 @@ h1 {
 .head__pic {
   width: 60%;
   height: 28.5vh;
-  margin: 0 20% 3%;
+  margin: 0 30% 3% 10%;
   border-radius: 50%;
   border-style: solid;
   border-color: rgba(255, 255, 255, 0.45);
-  background-image: url(../headPicture.JPG);
+  background-image: url(../images/headPicture.JPG);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -127,8 +149,8 @@ h1 {
 
 .head__github {
   position: absolute;
-  bottom: 0;
-  right: 4%;
+  top: 7%;
+  right: 10%;
   width: 10%;
   line-height: 5vh;
   text-align: center;
@@ -145,8 +167,8 @@ h1 {
 
 .head__facebook {
   position: absolute;
-  bottom: 12%;
-  right: 4%;
+  top: 20.25%;
+  right: 10%;
   width: 10%;
   line-height: 5vh;
   text-align: center;
@@ -163,8 +185,8 @@ h1 {
 
 .head__instagram {
   position: absolute;
-  bottom: 20%;
-  right: 4%;
+  top: 33.5%;
+  right: 10%;
   width: 10%;
   line-height: 5vh;
   text-align: center;
@@ -206,8 +228,8 @@ h1 {
 
 #wheelDiv {
   width: 60%;
-  height: 60vh;
-  margin: 0 30% 0 10%;
+  height: 50vh;
+  margin: 0 20%;
 }
 
 #wheelDiv > svg {
@@ -216,17 +238,206 @@ h1 {
   /* margin: 0 20%; */
 }
 
-h2 {
-  font-size: 1.5rem;
+.about-me,
+.works,
+.skills,
+.future {
+  width: 95%;
+  margin: 7% 2.5% 0;
 }
 
-h3 {
-  font-size: 1.25rem;
+.subTitle {
+  width: 100%;
+  text-align: center;
 }
 
-h4 {
+/* about me */
+.about-me__profile,
+.about-me__timeline {
+  margin-top: 4%;
+}
+
+.smlTitle {
+  position: relative;
+  padding-left: 3%;
+  margin: 3% 0 2%;
+}
+
+.minTitle {
+  margin: 2% 0 2%;
+  width: 40%;
+  text-align: center;
+}
+
+.smlTitle::before {
+  content: "";
+  display: inline-block;
+  width: 7px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #111;
+}
+
+.minTitle {
+  position: relative;
+  display: inline-block;
+  line-height: 2rem;
+}
+
+.minTitle::after {
+  content: "";
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+}
+
+.contents__detail,
+.timeline__description {
+  line-height: 1.5;
+}
+
+.about-me__my-history {
+  margin-top: 2%;
+  position: relative;
+}
+
+.about-me__my-history::before {
+  content: "";
+  display: inline-block;
+  width: 3px;
+  height: 100%;
+  background-color: #0097a7;
+  position: absolute;
+  top: -2px;
+  left: -5px;
+}
+
+.timeline__date {
+  position: relative;
+  display: inline-block;
+  width: 50%;
+  margin: 3% 0;
+  padding: 2%;
+  text-align: center;
+  color: #555;
+  font-size: 16px;
+  background: #e0edff;
+}
+
+.timeline__date::before {
+  content: "";
+  position: absolute;
+  top: 24.089259108%;
+  left: -6.25%;
+  border: 8px solid #00ff00;
+}
+
+.timeline__description {
+  margin: 0 0 5% 2%;
+}
+
+.timeline__description__year {
+  background-color: white;
+  border-radius: 3%;
+}
+
+/* works */
+.midWrap {
+  margin-top: 5%;
+}
+
+.site-link,
+.site-link:visited,
+.site-link:hover,
+.site-link:active {
+  color: #00f;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.github-site::before {
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 900;
+  content: "\f09b";
+  margin-right: 1%;
+}
+
+.demo-site::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f108";
+  margin-right: 1%;
+}
+
+.imgWrap {
+  width: 70%;
+  margin: 0 15%;
+}
+.works__saki-okamura-webSite__img img,
+.works__nina-umbrella-project-WebSite__img img,
+.works__web8th-team-webSite__img img {
+  width: 100%;
+  margin-top: 5%;
+}
+
+/* skills */
+.skills__programming,
+.skills__technologies,
+.skills__others,
+.future {
+  margin-bottom: 8%;
+}
+
+.htmlCss,
+.javaScript,
+.php,
+.apache,
+.sql,
+.wordpress,
+.github,
+.toeic,
+.sightseeing,
+.rugby {
+  margin-bottom: 3%;
+}
+
+.skills__minTitle {
+  width: 60%;
+  line-height: 5vh;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.star-rating {
+  position: relative;
+  line-height: 5vh;
   font-size: 1.125rem;
 }
+
+.star-rating__front {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  color: #fc3;
+  padding-top: 7%;
+}
+
+.star-rating__back {
+  color: #ccc;
+  padding-top: 7%;
+}
+
+/* future */
 
 /* css 561px or more ~tablet.ver~ */
 /* Main */
@@ -248,6 +459,10 @@ h4 {
   h4 {
     font-size: 1.25rem;
   }
+
+  h5 {
+    font-size: 1.1875rem;
+  }
 }
 
 /* css 960px or more ~desktop.ver~ */
@@ -264,6 +479,10 @@ h4 {
   h4 {
     font-size: 1.375rem;
   }
+
+  h5 {
+    font-size: 1.3125rem;
+  }
 }
 
 /* Footer */
@@ -272,8 +491,8 @@ footer {
   text-align: center;
   background-color: #555;
   color: #ddd;
-  padding: 5px;
-  margin-top: 50px;
+  padding: 1.5%;
+  margin-top: 5%;
 }
 
 /* css 561px or more ~tablet.ver~ */
