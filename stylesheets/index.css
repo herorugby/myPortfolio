@@ -442,11 +442,343 @@ h5 {
 /* css 561px or more ~tablet.ver~ */
 /* Main */
 @media screen and (min-width: 560px) {
+
+  .main__head {
+    width: 100%;
+    height: 60vh;
+    position: relative;
+    background-image: url(../images/mainBackPic.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 30%;
+  }
+
+  .main__head::before {
+    content: "";
+    display: block;
+    height: 1.25%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+
+  .main__head__bgmask {
+    width: 100%;
+    height: 98.75%;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  .head__pic {
+    width: 60%;
+    height: 28.5vh;
+    margin: 0 30% 3% 10%;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.45);
+    background-image: url(../images/headPicture.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .head__github {
+    position: absolute;
+    top: 7%;
+    right: 10%;
+    width: 10%;
+    line-height: 5vh;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 5%;
+  }
+
+  .github__link {
+    display: block;
+    text-decoration: none;
+    background-color: #c0c0c0;
+    color: #000;
+  }
+
+  .head__facebook {
+    position: absolute;
+    top: 20.25%;
+    right: 10%;
+    width: 10%;
+    line-height: 5vh;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 5%;
+  }
+
+  .facebook__link {
+    display: block;
+    text-decoration: none;
+    background-color: #c0c0c0;
+    color: #000;
+  }
+
+  .head__instagram {
+    position: absolute;
+    top: 33.5%;
+    right: 10%;
+    width: 10%;
+    line-height: 5vh;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 5%;
+  }
+
+  .instagram__link {
+    display: block;
+    text-decoration: none;
+    background-color: #c0c0c0;
+    color: #000;
+  }
+
+  .sns-link,
+  .sns-link:visited,
+  .sns-link:hover,
+  .sns-link:active {
+    color: inherit;
+  }
+
+  .github__link::before {
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 900;
+    content: "\f09b";
+  }
+
+  .facebook__link::before {
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 900;
+    content: "\f09a";
+  }
+
+  .instagram__link::before {
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 900;
+    content: "\e055";
+  }
+
+  #wheelDiv {
+    width: 60%;
+    height: 50vh;
+    margin: 0 20%;
+  }
+
+  /* #wheelDiv > svg {
+    width: 100%;
+    height: 90%;
+    margin: 0 20%;
+  } */
+
   #wheelDiv > svg {
     width: 80%;
     height: 80%;
     margin: 0 10% 1%;
   }
+
+  .about-me,
+  .works,
+  .skills,
+  .future {
+    width: 95%;
+    margin: 7% 2.5% 0;
+  }
+
+  .subTitle {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* about me */
+
+  .about-me__profile,
+  .about-me__timeline {
+    margin-top: 4%;
+  }
+
+  .smlTitle {
+    position: relative;
+    padding-left: 3%;
+    margin: 3% 0 2%;
+  }
+
+  .minTitle {
+    margin: 2% 0 2%;
+    width: 40%;
+    text-align: center;
+  }
+
+  .smlTitle::before {
+    content: "";
+    display: inline-block;
+    width: 7px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #111;
+  }
+
+  .minTitle {
+    position: relative;
+    display: inline-block;
+    line-height: 2rem;
+  }
+
+  .minTitle::after {
+    content: "";
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+  }
+
+  .contents__detail,
+  .timeline__description {
+    line-height: 1.5;
+  }
+
+  .about-me__my-history {
+    margin-top: 2%;
+    position: relative;
+  }
+
+  .about-me__my-history::before {
+    content: "";
+    display: inline-block;
+    width: 3px;
+    height: 100%;
+    background-color: #0097a7;
+    position: absolute;
+    top: -2px;
+    left: -5px;
+  }
+
+  .timeline__date {
+    position: relative;
+    display: inline-block;
+    width: 50%;
+    margin: 3% 0;
+    padding: 2%;
+    text-align: center;
+    color: #555;
+    font-size: 16px;
+    background: #e0edff;
+  }
+
+  .timeline__date::before {
+    content: "";
+    position: absolute;
+    top: 24.089259108%;
+    left: -6.25%;
+    border: 8px solid #00ff00;
+  }
+
+  .timeline__description {
+    margin: 0 0 5% 2%;
+  }
+
+  .timeline__description__year {
+    background-color: white;
+    border-radius: 3%;
+  }
+
+  /* works */
+
+  .midWrap {
+    margin-top: 5%;
+  }
+
+  .site-link,
+  .site-link:visited,
+  .site-link:hover,
+  .site-link:active {
+    color: #00f;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .github-site::before {
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 900;
+    content: "\f09b";
+    margin-right: 1%;
+  }
+
+  .demo-site::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f108";
+    margin-right: 1%;
+  }
+
+  .imgWrap {
+    width: 70%;
+    margin: 0 15%;
+  }
+  .works__saki-okamura-webSite__img img,
+  .works__nina-umbrella-project-WebSite__img img,
+  .works__web8th-team-webSite__img img {
+    width: 100%;
+    margin-top: 5%;
+  }
+
+  /* skills */
+
+  .skills__programming,
+  .skills__technologies,
+  .skills__others,
+  .future {
+    margin-bottom: 8%;
+  }
+
+  .htmlCss,
+  .javaScript,
+  .php,
+  .apache,
+  .sql,
+  .wordpress,
+  .github,
+  .toeic,
+  .sightseeing,
+  .rugby {
+    margin-bottom: 3%;
+  }
+
+  .skills__minTitle {
+    width: 60%;
+    line-height: 5vh;
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+
+  .flex-container {
+    display: flex;
+  }
+
+  .star-rating {
+    position: relative;
+    line-height: 5vh;
+    font-size: 1.125rem;
+  }
+
+  .star-rating__front {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    color: #fc3;
+    padding-top: 7%;
+  }
+
+  .star-rating__back {
+    color: #ccc;
+    padding-top: 7%;
+  }
+
+  /* future */
 
   h2 {
     font-size: 1.625rem;
@@ -463,6 +795,15 @@ h5 {
   h5 {
     font-size: 1.1875rem;
   }
+
+  /* about me */
+
+  /* works */
+
+  /* skills */
+
+  /* future */
+
 }
 
 /* css 960px or more ~desktop.ver~ */
