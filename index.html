@@ -47,7 +47,12 @@
       <div class="wrap-main">
         <div class="main__head container float">
           <div class="main__head__bgmask main__head__container">
-            <div class="head__pic"></div>
+            <div class="head__pic">
+              <picture class="head__pic__img">
+                <source media="screen and (min-width: 560px) and (max-width: 959px)" srcset="images/headPicture__tab.JPG">
+                <img src="images/headPicture.JPG" alt="プロフィール画像">
+              </picture>
+            </div>
             <div class="head__github">
               <a class="github__link sns-link" href="https://github.com/herorugby" target="_blank" rel="noopener"></a>
             </div>
@@ -63,7 +68,7 @@
             data-wheelnav-navangle="90"
             data-wheelnav-slicepath="Wheel"
             data-wheelnav-colors="#D80351,#F5D908,#00A3EE,#929292">
-          <!-- sliceoption=> WinterSlice LineSlice PieSlice StarSlice CogSlice WheelSlice DonutSlice -->
+          <!-- sliceoption=> TabSlice WinterSlice LineSlice PieSlice StarSlice CogSlice WheelSlice DonutSlice -->
         </div>
 
         <section id="about-me" class="about-me">
