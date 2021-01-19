@@ -107,7 +107,7 @@ h5 {
   width: 100%;
   height: 30vh;
   position: relative;
-  background-image: url(../images/other.jpg);
+  background-image: url(../images/maibBackPic-Fuji.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 30%;
@@ -120,10 +120,9 @@ h5 {
 }
 
 .head__pic {
-  width: 200px;
-  height: 200px;
-  margin: auto 8%;
-  border-radius: 0 5% 5% 5%;
+  width: 150px;
+  height: 150px;
+  margin: auto 10%;
   box-shadow: 0 7px 25px rgba(0, 0, 0, 0.625);
 }
 
@@ -239,7 +238,7 @@ img {
 .skills,
 .future {
   width: 95%;
-  margin: 7% 2.5% 0;
+  margin: 0 2.5%;
 }
 
 .subTitle {
@@ -259,12 +258,6 @@ img {
   margin: 3% 0 2%;
 }
 
-.minTitle {
-  margin: 2% 0 2%;
-  width: 40%;
-  text-align: center;
-}
-
 .smlTitle::before {
   content: "";
   display: inline-block;
@@ -276,29 +269,15 @@ img {
   background-color: #111;
 }
 
-.minTitle {
-  position: relative;
-  display: inline-block;
-  line-height: 2rem;
-}
-
-.minTitle::after {
-  content: "";
-  background: rgba(0, 0, 0, 0.5);
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 2px;
-  width: 100%;
-}
-
 .contents__detail,
+.about-me__my-history,
 .timeline__description {
   line-height: 1.5;
+  font-size: 1rem;
 }
 
 .about-me__my-history {
-  margin-top: 2%;
+  margin-top: 4%;
   position: relative;
 }
 
@@ -321,7 +300,6 @@ img {
   padding: 2%;
   text-align: center;
   color: #555;
-  font-size: 16px;
   background: #e0edff;
 }
 
@@ -345,6 +323,25 @@ img {
 /* works */
 .midWrap {
   margin-top: 5%;
+}
+
+.minTitle {
+  position: relative;
+  display: inline-block;
+  line-height: 2rem;
+  margin: 2% 0 2%;
+  width: 40%;
+  text-align: center;
+}
+
+.minTitle::after {
+  content: "";
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
 }
 
 .site-link,
@@ -460,30 +457,28 @@ img {
   }
 
   .head__pic {
-    width: 200px;
-    height: 200px;
-    margin: auto 3%;
+    width: 250px;
+    height: 250px;
+  }
+
+  .head__github,
+  .head__facebook,
+  .head__instagram {
+    right: 5.5%;
+    width: 32%;
+    line-height: 7vh;
   }
 
   .head__github {
     top: 2.5vh;
-    right: 5.5%;
-    width: 32%;
-    line-height: 7vh;
   }
 
   .head__facebook {
     top: 16.5vh;
-    right: 5.5%;
-    width: 32%;
-    line-height: 7vh;
   }
 
   .head__instagram {
     top: 30.5vh;
-    right: 5.5%;
-    width: 32%;
-    line-height: 7vh;
   }
 
   .github__link::before {
@@ -513,49 +508,55 @@ img {
   .works,
   .skills,
   .future {
-    width: 95%;
-    margin: 7% 2.5% 0;
-  }
-
-  .subTitle {
-    width: 100%;
-    text-align: center;
+    width: 90%;
+    margin: 0 5%;
   }
 
   /* about me */
 
-  .about-me__profile,
-  .about-me__timeline {
-    margin-top: 4%;
-  }
-
-  .smlTitle {
-    position: relative;
-    padding-left: 3%;
-    margin: 3% 0 2%;
-  }
-
-  .minTitle {
-    margin: 2% 0 2%;
-    width: 40%;
-    text-align: center;
-  }
-
   .smlTitle::before {
-    content: "";
-    display: inline-block;
-    width: 7px;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: #111;
+    width: 10px;
+  }
+
+  .contents__detail,
+  .about-me__my-history,
+  .timeline__description {
+    line-height: 1.6;
+    font-size: 1.125rem;
+  }
+
+  .about-me__my-history::before {
+    width: 5px;
+  }
+
+  .timeline__date {
+    width: 30%;
+    margin: 2% 0 3% 3%;
+  }
+
+  .timeline__date::before {
+    top: 30%;
+    left: -13.5%;
+    border: 8px solid red;
+  }
+
+  .timeline__description {
+    margin: 0 0 3% 3%;
+  }
+
+  /* works */
+
+  .midWrap {
+    margin-top: 5%;
   }
 
   .minTitle {
     position: relative;
     display: inline-block;
     line-height: 2rem;
+    margin: 2% 0 2%;
+    width: 40%;
+    text-align: center;
   }
 
   .minTitle::after {
@@ -566,62 +567,6 @@ img {
     left: 0;
     height: 2px;
     width: 100%;
-  }
-
-  .contents__detail,
-  .timeline__description {
-    line-height: 1.5;
-  }
-
-  .about-me__my-history {
-    margin-top: 2%;
-    position: relative;
-  }
-
-  .about-me__my-history::before {
-    content: "";
-    display: inline-block;
-    width: 3px;
-    height: 100%;
-    background-color: #0097a7;
-    position: absolute;
-    top: -2px;
-    left: -5px;
-  }
-
-  .timeline__date {
-    position: relative;
-    display: inline-block;
-    width: 50%;
-    margin: 3% 0;
-    padding: 2%;
-    text-align: center;
-    color: #555;
-    font-size: 16px;
-    background: #e0edff;
-  }
-
-  .timeline__date::before {
-    content: "";
-    position: absolute;
-    top: 24.089259108%;
-    left: -6.25%;
-    border: 8px solid #00ff00;
-  }
-
-  .timeline__description {
-    margin: 0 0 5% 2%;
-  }
-
-  .timeline__description__year {
-    background-color: white;
-    border-radius: 3%;
-  }
-
-  /* works */
-
-  .midWrap {
-    margin-top: 5%;
   }
 
   .site-link,
@@ -747,32 +692,32 @@ img {
   }
 
   .main__head {
-    height: 50vh;
-    /* background-position: 20%; */
+    height: 39.5vh;
   }
 
   .head__pic {
-    width: 200px;
-    height: 200px;
-    margin: auto 8%;
+    width: 300px;
+    height: 300px;
+    margin: auto 15%;
+  }
+
+  .head__github,
+  .head__facebook,
+  .head__instagram {
+    right: 10%;
+    width: 30%;
   }
 
   .head__github {
     top: 2.5vh;
-    right: 8%;
-    width: 30%;
   }
 
   .head__facebook {
-    top: 21.5vh;
-    right: 8%;
-    width: 30%;
+    top: 16.5vh;
   }
 
   .head__instagram {
-    top: 40.5vh;
-    right: 8%;
-    width: 30%;
+    top: 30.5vh;
   }
 
   .github__link::before,
