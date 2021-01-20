@@ -28,6 +28,17 @@ img {
   width: 100%;
 }
 
+/* .fadeIn {
+  transform: translate3d(0, -10px, 0);
+  transition: 2s;
+  opacity: 0;
+}
+
+.fadeIn.animated {
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+} */
+
 /* font size auto control off */
 body {
   -webkit-text-size-adjust: 100%;
@@ -238,7 +249,7 @@ img {
 .skills,
 .future {
   width: 95%;
-  margin: 0 2.5%;
+  margin: 0 auto;
 }
 
 .subTitle {
@@ -292,22 +303,23 @@ img {
   left: -5px;
 }
 
-.timeline__date {
+.timeline__date__col-left {
   position: relative;
   display: inline-block;
   width: 50%;
-  margin: 3% 0;
+  margin: 3% auto;
   padding: 2%;
   text-align: center;
   color: #555;
   background: #e0edff;
 }
 
-.timeline__date::before {
+.timeline__date__col-left::before {
   content: "";
   position: absolute;
   top: 24.089259108%;
   left: -6.25%;
+  margin: auto;
   border: 8px solid #00ff00;
 }
 
@@ -320,6 +332,11 @@ img {
   border-radius: 3%;
 }
 
+.fa-hand-point-right::after {
+  content: "";
+  margin-right: 5px;
+}
+
 /* works */
 .midWrap {
   margin-top: 5%;
@@ -328,8 +345,8 @@ img {
 .minTitle {
   position: relative;
   display: inline-block;
-  line-height: 2rem;
-  margin: 2% 0 2%;
+  line-height: 5vh;
+  margin: 2% 0;
   width: 40%;
   text-align: center;
 }
@@ -353,13 +370,6 @@ img {
   font-weight: bold;
 }
 
-.github-site::before {
-  font-family: "Font Awesome 5 Brands";
-  font-weight: 900;
-  content: "\f09b";
-  margin-right: 1%;
-}
-
 .demo-site::before {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
@@ -367,9 +377,16 @@ img {
   margin-right: 1%;
 }
 
+.github-site::before {
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 900;
+  content: "\f09b";
+  margin-right: 1%;
+}
+
 .imgWrap {
   width: 70%;
-  margin: 0 15%;
+  margin: 0 auto;
 }
 .works__saki-okamura-webSite__img img,
 .works__nina-umbrella-project-WebSite__img img,
@@ -380,9 +397,7 @@ img {
 
 /* skills */
 .skills__programming,
-.skills__technologies,
-.skills__others,
-.future {
+.skills__technologies {
   margin-bottom: 8%;
 }
 
@@ -412,7 +427,7 @@ img {
 
 .star-rating {
   position: relative;
-  line-height: 5vh;
+  line-height: 6vh;
   font-size: 1.125rem;
 }
 
@@ -420,7 +435,6 @@ img {
   position: absolute;
   top: 0;
   left: 0;
-  overflow: hidden;
   color: #fc3;
   padding-top: 7%;
 }
@@ -481,22 +495,23 @@ img {
     top: 30.5vh;
   }
 
-  .github__link::before {
+  .github__link::before,
+  .facebook__link::before,
+  .instagram__link::before {
     white-space: pre-wrap;
-    content: "\f09b   GitHub";
     font-size: 1.25rem;
+  }
+
+  .github__link::before {
+    content: "\f09b   GitHub";
   }
 
   .facebook__link::before {
-    white-space: pre-wrap;
     content: "\f082   facebook";
-    font-size: 1.25rem;
   }
 
   .instagram__link::before {
-    white-space: pre-wrap;
     content: "\f16d   instagram";
-    font-size: 1.25rem;
   }
 
   #wheelDiv {
@@ -509,7 +524,6 @@ img {
   .skills,
   .future {
     width: 90%;
-    margin: 0 5%;
   }
 
   /* about me */
@@ -525,38 +539,40 @@ img {
     font-size: 1.125rem;
   }
 
+  .about-me__my-history {
+    width: 80%;
+    margin: 0 0 0 20%;
+  }
+
   .about-me__my-history::before {
     width: 5px;
   }
 
-  .timeline__date {
-    width: 30%;
-    margin: 2% 0 3% 3%;
+  .fa-hand-point-right::after {
+    margin-right: 7px;
   }
 
-  .timeline__date::before {
+  .timeline__date__col-left {
+    left: -28%;
+    width: 20%;
+    margin: 2% 0 0;
+  }
+
+  .timeline__date__col-left::before {
     top: 30%;
-    left: -13.5%;
+    left: 108%;
     border: 8px solid red;
   }
 
-  .timeline__description {
+  .col-right {
     margin: 0 0 3% 3%;
   }
 
   /* works */
 
-  .midWrap {
-    margin-top: 5%;
-  }
-
   .minTitle {
-    position: relative;
-    display: inline-block;
-    line-height: 2rem;
-    margin: 2% 0 2%;
-    width: 40%;
-    text-align: center;
+    margin: 2% 0 2% 3%;
+    width: 25%;
   }
 
   .minTitle::after {
@@ -569,100 +585,30 @@ img {
     width: 100%;
   }
 
-  .site-link,
-  .site-link:visited,
-  .site-link:hover,
-  .site-link:active {
-    color: #00f;
-    text-decoration: none;
-    font-weight: bold;
+  .used-language {
+    margin-left: 3%;
   }
 
+  .demo-site::before,
   .github-site::before {
-    font-family: "Font Awesome 5 Brands";
-    font-weight: 900;
-    content: "\f09b";
-    margin-right: 1%;
-  }
-
-  .demo-site::before {
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    content: "\f108";
-    margin-right: 1%;
+    margin-right: 2%;
   }
 
   .imgWrap {
-    width: 70%;
-    margin: 0 15%;
-  }
-  .works__saki-okamura-webSite__img img,
-  .works__nina-umbrella-project-WebSite__img img,
-  .works__web8th-team-webSite__img img {
-    width: 100%;
-    margin-top: 5%;
+    width: 50%;
   }
 
   /* skills */
 
-  .skills__programming,
-  .skills__technologies,
-  .skills__others,
-  .future {
-    margin-bottom: 8%;
-  }
-
-  .htmlCss,
-  .javaScript,
-  .php,
-  .apache,
-  .sql,
-  .wordpress,
-  .github,
-  .toeic,
-  .sightseeing,
-  .rugby {
-    margin-bottom: 3%;
-  }
-
   .skills__minTitle {
-    width: 60%;
-    line-height: 5vh;
-    margin-left: 3%;
-    margin-right: 3%;
-  }
-
-  .flex-container {
-    display: flex;
+    width: 40%;
+    margin-left: 2%;
+    margin-right: 5%;
   }
 
   .star-rating {
-    position: relative;
-    line-height: 5vh;
     font-size: 1.125rem;
   }
-
-  .star-rating__front {
-    position: absolute;
-    top: 0;
-    left: 0;
-    overflow: hidden;
-    color: #fc3;
-    padding-top: 7%;
-  }
-
-  .star-rating__back {
-    color: #ccc;
-    padding-top: 7%;
-  }
-
-  /* future */
-
-  /* about me */
-
-  /* works */
-
-  /* skills */
 
   /* future */
 }
@@ -696,8 +642,8 @@ img {
   }
 
   .head__pic {
-    width: 300px;
-    height: 300px;
+    width: 270px;
+    height: 270px;
     margin: auto 15%;
   }
 
@@ -730,6 +676,78 @@ img {
     width: 350px;
     height: 350px;
   }
+
+  .about-me,
+  .works,
+  .skills,
+  .future {
+    width: 95%;
+  }
+
+  /* about me */
+
+  .smlTitle::before {
+    width: 13px;
+  }
+
+  .contents__detail,
+  .about-me__my-history,
+  .timeline__description {
+    line-height: 1.7;
+    font-size: 1.25rem;
+  }
+
+  .about-me__my-history {
+    width: 70%;
+    margin: 0 0 0 20%;
+  }
+
+  .about-me__my-history::before {
+    width: 7px;
+  }
+
+  .fa-hand-point-right::after {
+    margin-right: 9px;
+  }
+
+  .timeline__date__col-left::before {
+    display: none;
+  }
+
+  .timeline__date__col-left::after {
+    content: "";
+    position: absolute;
+    top: 30%;
+    right: -20%;
+    margin: auto;
+    border: 8px solid #00ff00;
+  }
+
+  /* works */
+
+  .minTitle {
+    width: 20%;
+  }
+
+  .used-language {
+    margin-left: 5%;
+  }
+
+  .imgWrap {
+    width: 55%;
+  }
+
+  /* skills */
+
+  .skills__minTitle {
+    width: 40%;
+    margin-left: 2%;
+    margin-right: 5%;
+  }
+
+  .star-rating {
+    font-size: 1.25rem;
+  }
 }
 
 /* Footer */
@@ -739,17 +757,27 @@ footer {
   background-color: #555;
   color: #ddd;
   padding: 1.5%;
-  margin-top: 5%;
+  margin-top: 3%;
+}
+
+.footer__contents__copy-right {
+  font-size: 0.875rem;
 }
 
 /* css 561px or more ~tablet.ver~ */
 /* Footer */
 @media screen and (min-width: 560px) {
+  .footer__contents__copy-right {
+    font-size: 1rem;
+  }
 }
 
 /* css 960px or more ~desktop.ver~ */
 /* Footer */
 @media screen and (min-width: 960px) {
+  .footer__contents__copy-right {
+    font-size: 1.125rem;
+  }
 }
 
 /* Insert generated CSS code from here -> http://pmg.softwaretailoring.net */
