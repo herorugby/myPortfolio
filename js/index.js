@@ -74,21 +74,6 @@ var wheel = new wheelnav('wheelDiv');
 //       });
 //     });
 
-<<<<<<< HEAD
-
-=======
-//     function slideIn() {
-//       let box = $(".fadeIn");
-//       box.each(function(){
-//             let boxOffset = $(this).offset().top;
-//             let scrollPos = $(window).scrollTop();
-//             let wh = $(window).height();
-//             if(scrollPos > boxOffset - wh + 100){
-//               $(this).addClass("animated");
-//             }
-//           });
-//     }
->>>>>>> 500a77248021393a95e5621a5bfe9553b3c23260
 // window.onload = function () {
 
 //     // var wheel = new wheelnav('wheelDiv');
@@ -104,7 +89,6 @@ var wheel = new wheelnav('wheelDiv');
 //       // a.style.display = "block";
 //     };
 // }
-
 
 // copy right get full year
 $(function() {
