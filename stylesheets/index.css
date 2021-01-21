@@ -45,7 +45,7 @@ body {
   -moz-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   text-size-adjust: 100%;
-  background-color: #e7e7e7;
+  background-color: #fafdff;
   font-size: 16px;
   font-family: "Sawarabi Gothic", sans-serif;
 }
@@ -60,7 +60,7 @@ body {
 /* css less than 559px ~mobile.ver~ */
 header {
   width: 100%;
-  background-color: #555;
+  background-color: #595857;
   color: #fff;
   text-align: center;
 }
@@ -161,7 +161,7 @@ img {
 .github__link {
   display: block;
   text-decoration: none;
-  background-color: #eaf4fc;
+  background-color: #dcdddd;
   box-shadow: 2.5px 2.5px 3px 1px rgba(0, 0, 0, 0.7);
 }
 
@@ -197,7 +197,7 @@ img {
 .instagram__link {
   display: block;
   text-decoration: none;
-  background-color: #eaf4fc;
+  background-color: #fdeff2;
   box-shadow: 2.5px 2.5px 3px 1px rgba(0, 0, 0, 0.7);
 }
 
@@ -561,7 +561,6 @@ img {
   .timeline__date__col-left::before {
     top: 30%;
     left: 108%;
-    border: 8px solid red;
   }
 
   .col-right {
@@ -617,8 +616,8 @@ img {
 /* Main */
 @media screen and (min-width: 960px) {
   .all-wrap {
-    width: 90%;
-    margin: 1% 5%;
+    width: 100%;
+    margin: auto;
   }
 
   h2 {
@@ -754,8 +753,8 @@ img {
 /* css less than 559px ~mobile.ver~ */
 footer {
   text-align: center;
-  background-color: #555;
-  color: #ddd;
+  background-color: #595857;
+  color: #fff;
   padding: 1.5%;
   margin-top: 3%;
 }
