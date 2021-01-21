@@ -265,6 +265,23 @@ img {
   font-size: 1.125rem;
 }
 
+.top-btn {
+  display: block
+  width: ;
+  height: ;
+}
+
+.top-btn::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f164";
+  font-size: 1.125rem;
+  position: absolute;
+  bottom: ;
+  right: ;
+  color: ;
+}
+
 #wheelDiv {
   width: 230px;
   height: 230px;
