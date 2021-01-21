@@ -28,16 +28,49 @@ img {
   width: 100%;
 }
 
-/* .fadeIn {
+.fadeInAboutMe {
   transform: translate3d(0, -10px, 0);
   transition: 2s;
   opacity: 0;
 }
 
-.fadeIn.animated {
+.fadeInAboutMe.animated {
   transform: translate3d(0, 0, 0);
   opacity: 1;
-} */
+}
+
+.fadeInWorks {
+  transform: translate3d(0, -10px, 0);
+  transition: 2s;
+  opacity: 0;
+}
+
+.fadeInWorks.animated {
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+}
+
+.fadeInSkills {
+  transform: translate3d(0, -10px, 0);
+  transition: 2s;
+  opacity: 0;
+}
+
+.fadeInSkills.animated {
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+}
+
+.fadeInFuture {
+  transform: translate3d(0, -10px, 0);
+  transition: 2s;
+  opacity: 0;
+}
+
+.fadeInFuture.animated {
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+}
 
 /* font size auto control off */
 body {
@@ -297,7 +330,7 @@ img {
   display: inline-block;
   width: 3px;
   height: 100%;
-  background-color: #0097a7;
+  background-color: #68a4d9;
   position: absolute;
   top: -2px;
   left: -5px;
@@ -311,7 +344,7 @@ img {
   padding: 2%;
   text-align: center;
   color: #555;
-  background: #e0edff;
+  background: #bbe2f1;
 }
 
 .timeline__date__col-left::before {
@@ -320,7 +353,7 @@ img {
   top: 24.089259108%;
   left: -6.25%;
   margin: auto;
-  border: 8px solid #00ff00;
+  border: 8px solid #ff0000;
 }
 
 .timeline__description {
@@ -590,7 +623,7 @@ img {
 
   .demo-site::before,
   .github-site::before {
-    margin-right: 2%;
+    margin-right: 1%;
   }
 
   .imgWrap {
@@ -637,13 +670,13 @@ img {
   }
 
   .main__head {
-    height: 39.5vh;
+    height: 45vh;
   }
 
   .head__pic {
     width: 270px;
     height: 270px;
-    margin: auto 15%;
+    margin: auto 20%;
   }
 
   .head__github,
@@ -672,8 +705,8 @@ img {
   }
 
   #wheelDiv {
-    width: 350px;
-    height: 350px;
+    width: 320px;
+    height: 320px;
   }
 
   .about-me,
@@ -717,9 +750,9 @@ img {
     content: "";
     position: absolute;
     top: 30%;
-    right: -20%;
+    right: -19%;
     margin: auto;
-    border: 8px solid #00ff00;
+    border: 8px solid #ff0000;
   }
 
   /* works */
