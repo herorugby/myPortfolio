@@ -265,10 +265,15 @@ img {
   font-size: 1.125rem;
 }
 
-.top-btn {
-  display: block
-  width: ;
-  height: ;
+/* .top-btn {
+  display: block;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 80%;
+  right: 5%;
+  color: #fff;
+  background-color: #c0c0c0;
 }
 
 .top-btn::after {
@@ -276,11 +281,7 @@ img {
   font-weight: 900;
   content: "\f164";
   font-size: 1.125rem;
-  position: absolute;
-  bottom: ;
-  right: ;
-  color: ;
-}
+} */
 
 #wheelDiv {
   width: 230px;
@@ -361,7 +362,7 @@ img {
   padding: 2%;
   text-align: center;
   color: #555;
-  background: #bbe2f1;
+  background: #d3d3d3;
 }
 
 .timeline__date__col-left::before {
