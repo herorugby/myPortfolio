@@ -265,15 +265,25 @@ img {
   font-size: 1.125rem;
 }
 
-/* .top-btn {
-  display: block;
-  width: 15px;
-  height: 15px;
-  position: absolute;
-  top: 80%;
+.btn {
+  display: table;
+  position: fixed;
+  top: 85vh;
   right: 5%;
-  color: #fff;
-  background-color: #c0c0c0;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  background-color: #bbe2f1;
+  opacity: 0.8;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.top-btn {
+  display: table-cell;
+  vertical-align: middle;
+  text-decoration: none;
+  color: #000;
 }
 
 .top-btn::after {
@@ -281,7 +291,7 @@ img {
   font-weight: 900;
   content: "\f164";
   font-size: 1.125rem;
-} */
+}
 
 #wheelDiv {
   width: 230px;
@@ -565,6 +575,18 @@ img {
     content: "\f16d   instagram";
   }
 
+  .btn {
+    top: 88vh;
+    right: 5%;
+    width: 60px;
+    height: 60px;
+    background-color: #bbe2f1;
+  }
+
+  .top-btn::after {
+    font-size: 1.25rem;
+  }
+
   #wheelDiv {
     width: 270px;
     height: 270px;
@@ -719,6 +741,18 @@ img {
   .github__link::before,
   .facebook__link::before,
   .instagram__link::before {
+    font-size: 1.375rem;
+  }
+
+  .btn {
+    top: 80vh;
+    right: 5%;
+    width: 70px;
+    height: 70px;
+    background-color: #bbe2f1;
+  }
+
+  .top-btn::after {
     font-size: 1.375rem;
   }
 

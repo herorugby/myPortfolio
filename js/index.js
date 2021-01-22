@@ -88,6 +88,29 @@ wheel.navItems[3].navigateFunction = function () {
       });
 }
 
+// page top btn fadein and fadeout function
+$(function () {
+      let topBtn = $(".btn");
+      topBtn.hide();
+
+  // will come of topBtn function
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 200) {
+        topBtn.fadeIn(600);
+      } else {
+        topBtn.fadeOut(300);
+      }
+    });
+
+  // to page top when click the topBtn
+    topBtn.on("click", function() {
+      $("body, html").animate({
+        scrollTop: 0
+      }, 2000,"swing");
+      return false;
+    });
+
+  });
 
 
 
