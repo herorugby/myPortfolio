@@ -10,22 +10,24 @@ works.style.display = "none";
 skills.style.display = "none";
 future.style.display = "none";
 
-$(window).on("load scroll", function (){
+$(window).scroll(function (){
       let box = $(".fadeInAboutMe");
       box.each(function(){
-      let boxOffset = $(this).offset().top;
-      let scrollPos = $(window).scrollTop();
-      let wh = $(window).height();
+            let boxOffset = $(this).offset().top;
+            let scrollPos = $(window).scrollTop();
+            let wh = $(window).height();
       if(scrollPos > boxOffset - wh + 100){
-      $(this).addClass("animated");
-      }
+            $(this).addClass("animated");
+            }
       });
 });
+
 
 
 var wheel = new wheelnav('wheelDiv');
 wheel.createWheel(["About\nME", "Works", "Skills","Future"]);
 wheel.navigateWheel(0); //default num
+// wheel.spreaderEnable = true;
 
 wheel.navItems[0].navigateFunction = function () {
       aboutMe.style.display = "block";
@@ -39,15 +41,15 @@ wheel.navItems[1].navigateFunction = function () {
       works.style.display = "block";
       skills.style.display = "none";
       future.style.display = "none";
-      $(window).on("load scroll", function (){
+      $(window).scroll(function (){
             let box = $(".fadeInWorks");
             box.each(function(){
-            let boxOffset = $(this).offset().top;
-            let scrollPos = $(window).scrollTop();
-            let wh = $(window).height();
+                  let boxOffset = $(this).offset().top;
+                  let scrollPos = $(window).scrollTop();
+                  let wh = $(window).height();
             if(scrollPos > boxOffset - wh + 100){
-            $(this).addClass("animated");
-            }
+                  $(this).addClass("animated");
+                  }
             });
       });
 }
@@ -57,15 +59,15 @@ wheel.navItems[2].navigateFunction = function () {
       works.style.display = "none";
       skills.style.display = "block";
       future.style.display = "none";
-      $(window).on("load scroll", function (){
+      $(window).scroll(function (){
             let box = $(".fadeInSkills");
             box.each(function(){
-            let boxOffset = $(this).offset().top;
-            let scrollPos = $(window).scrollTop();
-            let wh = $(window).height();
+                  let boxOffset = $(this).offset().top;
+                  let scrollPos = $(window).scrollTop();
+                  let wh = $(window).height();
             if(scrollPos > boxOffset - wh + 100){
-            $(this).addClass("animated");
-            }
+                  $(this).addClass("animated");
+                  }
             });
       });
 }
@@ -75,15 +77,15 @@ wheel.navItems[3].navigateFunction = function () {
       works.style.display = "none";
       skills.style.display = "none";
       future.style.display = "block";
-      $(window).on("load scroll", function (){
+      $(window).scroll(function (){
             let box = $(".fadeInFuture");
             box.each(function(){
-            let boxOffset = $(this).offset().top;
-            let scrollPos = $(window).scrollTop();
-            let wh = $(window).height();
+                  let boxOffset = $(this).offset().top;
+                  let scrollPos = $(window).scrollTop();
+                  let wh = $(window).height();
             if(scrollPos > boxOffset - wh + 100){
-            $(this).addClass("animated");
-            }
+                  $(this).addClass("animated");
+                  }
             });
       });
 }
