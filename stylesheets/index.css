@@ -362,7 +362,7 @@ img {
   padding: 2%;
   text-align: center;
   color: #555;
-  background: #d3d3d3;
+  background: #bbe2f1;
 }
 
 .timeline__date__col-left::before {
@@ -379,7 +379,7 @@ img {
 }
 
 .timeline__description__year {
-  background-color: white;
+  background-color: #d3d3d3;
   border-radius: 3%;
 }
 
