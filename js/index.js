@@ -16,7 +16,7 @@ $(window).scroll(function (){
             let boxOffset = $(this).offset().top;
             let scrollPos = $(window).scrollTop();
             let wh = $(window).height();
-      if(scrollPos > boxOffset - wh + 100){
+      if(scrollPos > boxOffset - wh){
             $(this).addClass("animated");
             }
       });
@@ -47,7 +47,7 @@ wheel.navItems[1].navigateFunction = function () {
                   let boxOffset = $(this).offset().top;
                   let scrollPos = $(window).scrollTop();
                   let wh = $(window).height();
-            if(scrollPos > boxOffset - wh + 100){
+            if(scrollPos > boxOffset - wh){
                   $(this).addClass("animated");
                   }
             });
@@ -65,7 +65,7 @@ wheel.navItems[2].navigateFunction = function () {
                   let boxOffset = $(this).offset().top;
                   let scrollPos = $(window).scrollTop();
                   let wh = $(window).height();
-            if(scrollPos > boxOffset - wh + 100){
+            if(scrollPos > boxOffset - wh){
                   $(this).addClass("animated");
                   }
             });
@@ -83,7 +83,7 @@ wheel.navItems[3].navigateFunction = function () {
                   let boxOffset = $(this).offset().top;
                   let scrollPos = $(window).scrollTop();
                   let wh = $(window).height();
-            if(scrollPos > boxOffset - wh + 100){
+            if(scrollPos > boxOffset - wh){
                   $(this).addClass("animated");
                   }
             });
@@ -97,7 +97,7 @@ $(function () {
 
   // will come of topBtn function
     $(window).scroll(function () {
-      if ($(this).scrollTop() > 200) {
+      if ($(this).scrollTop() > 150) {
         topBtn.fadeIn(600);
       } else {
         topBtn.fadeOut(300);
@@ -108,52 +108,12 @@ $(function () {
     topBtn.on("click", function() {
       $("body, html").animate({
         scrollTop: 0
-      }, 2000,"swing");
+      }, 400,"swing");
       return false;
     });
 
   });
 
-
-
-// $(window).on("load scroll", function (){
-//       let box = $(".fadeIn");
-
-//       box.each(function(){
-//         let boxOffset = $(this).offset().top;
-//         let scrollPos = $(window).scrollTop();
-//         let wh = $(window).height();
-//         if(scrollPos > boxOffset - wh + 100){
-//           $(this).addClass("animated");
-//         }
-//       });
-//     });
-
-//     window.addEventListener("scroll", function () {
-//       let box = document.getElementsByClassName("fadeInAboutMe");
-//       let boxOffset = aboutMe.offsetHeight;
-//       let scrollPos = document.body.scrollTop;
-//       let wh = window.innerHeight;
-//       if(scrollPos > boxOffset - wh + 100){
-//             box.classList.add("animated");
-//           }
-// });
-
-// window.onload = function () {
-
-//     // var wheel = new wheelnav('wheelDiv');
-
-//     //This is the place for code snippets from the documentation -> http://wheelnavjs.softwaretailoring.net/documentation.html
-
-//     // wheel.createWheel(["About ME", "Works", "Skills", "Future"]);
-//     // wheel.navigateWheel(0); //default num
-
-//     //Insert generated JavaScript code from here -> http://pmg.softwaretailoring.net
-
-//     wheel.navItems[0].navigateFunction = function () {
-//       // a.style.display = "block";
-//     };
-// }
 
 // copy right get full year
 $(function() {
