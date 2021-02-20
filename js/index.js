@@ -92,7 +92,7 @@ wheel.navItems[3].navigateFunction = function () {
 
 // page top btn fadein and fadeout function
 $(function () {
-      let topBtn = $(".btn");
+      let topBtn = $(".page-top__btn");
       topBtn.hide();
 
   // will come of topBtn function

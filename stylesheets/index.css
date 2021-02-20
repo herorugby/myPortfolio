@@ -28,6 +28,10 @@ img {
   width: 100%;
 }
 
+.flex-container {
+  display: flex;
+}
+
 .fadeInAboutMe {
   transform: translate3d(0, -10px, 0);
   transition: 2s;
@@ -157,10 +161,10 @@ h5 {
   background-position: 30%;
 }
 
-.main__head__bgmask {
+.main__head--bgmask {
   width: 100%;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.45);
 }
 
 .head__pic {
@@ -174,10 +178,6 @@ picture,
 img {
   width: 100%;
   height: 100%;
-}
-
-.main__head__container {
-  display: flex;
 }
 
 .head__github {
@@ -265,34 +265,6 @@ img {
   font-size: 1.125rem;
 }
 
-.btn {
-  display: table;
-  position: fixed;
-  top: 80vh;
-  right: 5%;
-  width: 50px;
-  height: 50px;
-  text-align: center;
-  background-color: #bbe2f1;
-  opacity: 0.8;
-  border-radius: 50%;
-  z-index: 1;
-}
-
-.top-btn {
-  display: table-cell;
-  vertical-align: middle;
-  text-decoration: none;
-  color: #000;
-}
-
-.top-btn::after {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  content: "\f164";
-  font-size: 1.125rem;
-}
-
 #wheelDiv {
   width: 230px;
   height: 230px;
@@ -313,7 +285,7 @@ img {
   margin: 0 auto;
 }
 
-.subTitle {
+.sub-title {
   width: 100%;
   text-align: center;
 }
@@ -324,13 +296,13 @@ img {
   margin-top: 4%;
 }
 
-.smlTitle {
+.sml-title {
   position: relative;
   padding-left: 3%;
   margin: 3% 0 2%;
 }
 
-.smlTitle::before {
+.sml-title::before {
   content: "";
   display: inline-block;
   width: 7px;
@@ -364,7 +336,7 @@ img {
   left: -5px;
 }
 
-.timeline__date__col-left {
+.timeline__date--col-left {
   position: relative;
   display: inline-block;
   width: 50%;
@@ -375,7 +347,7 @@ img {
   background: #bbe2f1;
 }
 
-.timeline__date__col-left::before {
+.timeline__date--col-left::before {
   content: "";
   position: absolute;
   top: 24.089259108%;
@@ -386,6 +358,12 @@ img {
 
 .timeline__description {
   margin: 0 0 5% 2%;
+}
+
+.timeline__description a,
+.timeline__description a:visited {
+  text-decoration: none;
+  color: #008000;
 }
 
 .timeline__description__year {
@@ -399,11 +377,11 @@ img {
 }
 
 /* works */
-.midWrap {
+.mid-wrap {
   margin-top: 5%;
 }
 
-.minTitle {
+.min-title {
   position: relative;
   display: inline-block;
   line-height: 5vh;
@@ -412,7 +390,7 @@ img {
   text-align: center;
 }
 
-.minTitle::after {
+.min-title::after {
   content: "";
   background: rgba(0, 0, 0, 0.5);
   position: absolute;
@@ -445,7 +423,7 @@ img {
   margin-right: 1%;
 }
 
-.imgWrap {
+.img-wrap {
   width: 70%;
   margin: 0 auto;
 }
@@ -475,18 +453,15 @@ img {
   margin-bottom: 3%;
 }
 
-.skills__minTitle {
+.skills__min-title {
   width: 60%;
   line-height: 5vh;
   margin-left: 3%;
   margin-right: 3%;
 }
 
-.flex-container {
-  display: flex;
-}
-
 .star-rating {
+  display: inline-block;
   position: relative;
   line-height: 6vh;
   font-size: 1.125rem;
@@ -505,7 +480,34 @@ img {
   padding-top: 7%;
 }
 
-/* future */
+.page-top__btn {
+  display: table;
+  position: fixed;
+  bottom: 10vh;
+  right: 5%;
+  width: 55px;
+  height: 55px;
+  text-align: center;
+  background-color: #bbe2f1;
+  opacity: 0.9;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.top-btn {
+  display: table-cell;
+  vertical-align: middle;
+  line-height: 1.2;
+  text-decoration: none;
+  color: #000;
+}
+
+.top-btn::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f102";
+  font-size: 1.125rem;
+}
 
 /* css 561px or more ~tablet.ver~ */
 /* Main */
@@ -575,18 +577,6 @@ img {
     content: "\f16d   instagram";
   }
 
-  .btn {
-    top: 88vh;
-    right: 5%;
-    width: 60px;
-    height: 60px;
-    background-color: #bbe2f1;
-  }
-
-  .top-btn::after {
-    font-size: 1.25rem;
-  }
-
   #wheelDiv {
     width: 270px;
     height: 270px;
@@ -601,7 +591,7 @@ img {
 
   /* about me */
 
-  .smlTitle::before {
+  .sml-title::before {
     width: 10px;
   }
 
@@ -625,13 +615,13 @@ img {
     margin-right: 7px;
   }
 
-  .timeline__date__col-left {
+  .timeline__date--col-left {
     left: -28%;
     width: 20%;
     margin: 2% 0 0;
   }
 
-  .timeline__date__col-left::before {
+  .timeline__date--col-left::before {
     top: 30%;
     left: 108%;
   }
@@ -642,12 +632,12 @@ img {
 
   /* works */
 
-  .minTitle {
+  .min-title {
     margin: 2% 0 2% 3%;
     width: 25%;
   }
 
-  .minTitle::after {
+  .min-title::after {
     content: "";
     background: rgba(0, 0, 0, 0.5);
     position: absolute;
@@ -666,13 +656,13 @@ img {
     margin-right: 1%;
   }
 
-  .imgWrap {
+  .img-wrap {
     width: 50%;
   }
 
   /* skills */
 
-  .skills__minTitle {
+  .skills__min-title {
     width: 40%;
     margin-left: 2%;
     margin-right: 5%;
@@ -682,7 +672,20 @@ img {
     font-size: 1.125rem;
   }
 
-  /* future */
+  .page-top__btn {
+    top: 88vh;
+    right: 5%;
+    width: 60px;
+    height: 60px;
+  }
+
+  .top-btn {
+    line-height: 1.3;
+  }
+
+  .top-btn::after {
+    font-size: 1.25rem;
+  }
 }
 
 /* css 960px or more ~desktop.ver~ */
@@ -744,22 +747,7 @@ img {
     font-size: 1.375rem;
   }
 
-  .btn {
-    top: 80vh;
-    right: 5%;
-    width: 70px;
-    height: 70px;
-    background-color: #bbe2f1;
-  }
-
-  .top-btn::after {
-    font-size: 1.375rem;
-  }
-
   #wheelDiv {
-    /* position: fixed; */
-    /* top: 0; */
-    /* right: 0; */
     width: 320px;
     height: 320px;
   }
@@ -773,7 +761,7 @@ img {
 
   /* about me */
 
-  .smlTitle::before {
+  .sml-title::before {
     width: 13px;
   }
 
@@ -797,11 +785,11 @@ img {
     margin-right: 9px;
   }
 
-  .timeline__date__col-left::before {
+  .timeline__date--col-left::before {
     display: none;
   }
 
-  .timeline__date__col-left::after {
+  .timeline__date--col-left::after {
     content: "";
     position: absolute;
     top: 30%;
@@ -812,7 +800,7 @@ img {
 
   /* works */
 
-  .minTitle {
+  .min-title {
     width: 20%;
   }
 
@@ -820,13 +808,13 @@ img {
     margin-left: 5%;
   }
 
-  .imgWrap {
+  .img-wrap {
     width: 55%;
   }
 
   /* skills */
 
-  .skills__minTitle {
+  .skills__min-title {
     width: 40%;
     margin-left: 2%;
     margin-right: 5%;
@@ -834,6 +822,21 @@ img {
 
   .star-rating {
     font-size: 1.25rem;
+  }
+
+  .page-top__btn {
+    top: 80vh;
+    right: 5%;
+    width: 70px;
+    height: 70px;
+  }
+
+  .top-btn {
+    line-height: 1.4;
+  }
+
+  .top-btn::after {
+    font-size: 1.375rem;
   }
 }
 
@@ -866,5 +869,3 @@ footer {
     font-size: 1.125rem;
   }
 }
-
-/* Insert generated CSS code from here -> http://pmg.softwaretailoring.net */
